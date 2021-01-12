@@ -1,5 +1,5 @@
 __title__ = "Psudo OOP Authentication"
-__description__ = "This program creates a user based on given input, "encrypts" the password, and then provides the user with account information."
+__description__ = "This program creates a user based on given input, 'encrypts' the password, and then provides the user with account information."
 
 __author__ = "Foster Reichert"
 __version__ = "1.0.0"
@@ -17,11 +17,11 @@ class User:
 		self.password = password
 	
 	def init(self):
-    # get length of password
+    	# get length of password
 		self.password_length = len(self.password)
-    # create a dynamic "*" placeholder
+    	# create a dynamic "*" placeholder
 		self.password_placeholder = "*" * self.password_length
-    # "encrypt" password using ord() and the abc list
+    	# "encrypt" password using ord() and the abc list
 		temp = self.password
 		self.password = ""
 		for i in range(len(temp)):
